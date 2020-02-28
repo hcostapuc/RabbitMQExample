@@ -1,0 +1,2 @@
+O exchange Direct é como um roteador, a mensagem vai para as filas que baindar a key exata da routing key da mensagem.
+//TODO terminar exemplo

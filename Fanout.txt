@@ -1,0 +1,15 @@
+Fanout funciona como um broadcast, o publisher envia a mesma mensagem para as queue que estão "baindando" o exchange de mesmo nome
+nesse caso, todas as queue baindadas com o nome "logs", ou seja se eu criar 100 receive, e cada receive com sua respectiva queue
+sendo que cada queue bainda o mesmo exchange, nesse caso o logs, chegara nas 100 filas a mensagem disparada pelo publisher
+
+
+Para uma experiencia boa desse exchange siga o passo a passo para criar dois receive um monitorando e um registrando o log em disco:
+
+1- Entre na pasta do projeto -> cd ReceiveLogs
+2- Execute o projeto gravando tudo que o console exibe em um arquivo de texto: dotnet run > logs_from_rabbit.log
+3- Execute o receive (esse seria para monitoramento) -> dotnet run
+4- Entre na pasta do projeto -> EmitLog
+5- Execute o Emit para disparar a mensagem para as duas queues criadas. -> dotnet run
+6- Para monitorarmos as queues/binds criados basta executarmos o comando no rabbitMQServer -> rabbitmqctl list_bindings
+
+//TODO: adicionar esquema de funcionamento (imagem)

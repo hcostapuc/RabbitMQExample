@@ -3,9 +3,29 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29709.97
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Publisher", "Publisher\Publisher.csproj", "{94F9E2CA-6B74-4558-87F5-5ED1D31E2AE6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Publisher", "TestSimple\Publisher\Publisher.csproj", "{3F5D8295-85A5-4999-92EC-771210B0B18D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Consumer", "Consumer\Consumer.csproj", "{133A1DE2-8414-45CA-9573-0E168D2E478E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Consumer", "TestSimple\Consumer\Consumer.csproj", "{A2D53527-9FB4-4B89-A21E-869B8B15CDE3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TestSimple", "TestSimple", "{5EAEF6FC-4A7E-4E77-9DA6-F6BF4FFFDA61}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TestExchangeFanout", "TestExchangeFanout", "{5C29E5CA-FAC4-4EED-8B63-004AFDA1A2F3}"
+	ProjectSection(SolutionItems) = preProject
+		Fanout.txt = Fanout.txt
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmitLogFanout", "TestExchangeFanout\EmitLogFanout\EmitLogFanout.csproj", "{AFE9B4DD-16F3-40A3-A1D2-52693D356866}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReceiveLogsFanout", "TestExchangeFanout\ReceiveLogsFanout\ReceiveLogsFanout.csproj", "{70F875CC-F16D-425E-82D1-C5FF2A7B446D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TestExchandeDirect", "TestExchandeDirect", "{8829B19A-69EC-4B50-9B2C-CBA3EAC7417A}"
+	ProjectSection(SolutionItems) = preProject
+		Direct.txt = Direct.txt
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmitLogDirect", "TestExchangeDirect\EmitLogDirect\EmitLogDirect.csproj", "{3F072310-30D2-4DA7-941D-055E422A1789}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReceiveLogsDirect", "TestExchangeDirect\ReceiveLogsDirect\ReceiveLogsDirect.csproj", "{61713DC4-2260-4A77-AABF-09ACDABBE1E1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,17 +33,41 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{94F9E2CA-6B74-4558-87F5-5ED1D31E2AE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{94F9E2CA-6B74-4558-87F5-5ED1D31E2AE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{94F9E2CA-6B74-4558-87F5-5ED1D31E2AE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{94F9E2CA-6B74-4558-87F5-5ED1D31E2AE6}.Release|Any CPU.Build.0 = Release|Any CPU
-		{133A1DE2-8414-45CA-9573-0E168D2E478E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{133A1DE2-8414-45CA-9573-0E168D2E478E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{133A1DE2-8414-45CA-9573-0E168D2E478E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{133A1DE2-8414-45CA-9573-0E168D2E478E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F5D8295-85A5-4999-92EC-771210B0B18D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F5D8295-85A5-4999-92EC-771210B0B18D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F5D8295-85A5-4999-92EC-771210B0B18D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F5D8295-85A5-4999-92EC-771210B0B18D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2D53527-9FB4-4B89-A21E-869B8B15CDE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2D53527-9FB4-4B89-A21E-869B8B15CDE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2D53527-9FB4-4B89-A21E-869B8B15CDE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2D53527-9FB4-4B89-A21E-869B8B15CDE3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AFE9B4DD-16F3-40A3-A1D2-52693D356866}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AFE9B4DD-16F3-40A3-A1D2-52693D356866}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AFE9B4DD-16F3-40A3-A1D2-52693D356866}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AFE9B4DD-16F3-40A3-A1D2-52693D356866}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70F875CC-F16D-425E-82D1-C5FF2A7B446D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70F875CC-F16D-425E-82D1-C5FF2A7B446D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70F875CC-F16D-425E-82D1-C5FF2A7B446D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70F875CC-F16D-425E-82D1-C5FF2A7B446D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F072310-30D2-4DA7-941D-055E422A1789}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F072310-30D2-4DA7-941D-055E422A1789}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F072310-30D2-4DA7-941D-055E422A1789}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F072310-30D2-4DA7-941D-055E422A1789}.Release|Any CPU.Build.0 = Release|Any CPU
+		{61713DC4-2260-4A77-AABF-09ACDABBE1E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61713DC4-2260-4A77-AABF-09ACDABBE1E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61713DC4-2260-4A77-AABF-09ACDABBE1E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61713DC4-2260-4A77-AABF-09ACDABBE1E1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3F5D8295-85A5-4999-92EC-771210B0B18D} = {5EAEF6FC-4A7E-4E77-9DA6-F6BF4FFFDA61}
+		{A2D53527-9FB4-4B89-A21E-869B8B15CDE3} = {5EAEF6FC-4A7E-4E77-9DA6-F6BF4FFFDA61}
+		{AFE9B4DD-16F3-40A3-A1D2-52693D356866} = {5C29E5CA-FAC4-4EED-8B63-004AFDA1A2F3}
+		{70F875CC-F16D-425E-82D1-C5FF2A7B446D} = {5C29E5CA-FAC4-4EED-8B63-004AFDA1A2F3}
+		{3F072310-30D2-4DA7-941D-055E422A1789} = {8829B19A-69EC-4B50-9B2C-CBA3EAC7417A}
+		{61713DC4-2260-4A77-AABF-09ACDABBE1E1} = {8829B19A-69EC-4B50-9B2C-CBA3EAC7417A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {BE62294F-0107-4506-9E04-44A2A0AC24B6}
