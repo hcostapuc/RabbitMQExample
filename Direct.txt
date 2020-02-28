@@ -1,2 +1,15 @@
-O exchange Direct é como um roteador, a mensagem vai para as filas que baindar a key exata da routing key da mensagem.
-//TODO terminar exemplo
+O exchange Direct é como um roteador, a mensagem vai para as queues que baindar a key exata da routing key da mensagem.
+Ou seja o publisher dispara a mensagem com uma ou varias key anexadas, logo cada fila que adicionar a routingKey, receberá a mensagem
+sendo assim uma queue pode receber varias keys ou uma unica key, podendo assim delegar para qual fila aquela mensagem vai.
+
+No nosso exemplo iremos criar 2 receives, cada um com uma queue, sendo que uma dela receberá 2 rotas de mensagem
+e a outra apenas um. Nosso cenário será de log, e as rotas serão definidas pelas severidades dos logs: info, warning, error.
+
+1- Entrar na pasta do Receive: cd ReceiveLogsDirect
+2- Agora iremos executar um receive que recebera o log da rota "warning" e "error" e gravará no arquivo: dotnet run warning error > logs_from_rabbit.log
+3- Agora um receive para monitoramento, iremos recuperar todas as rotas, sendo elas "info", "warning" e "error",
+   na mesma pasta do ReceiveLogsDirect executamos o comando: dotnet run info warning error
+4- Por ultimo executamos o publisher que irá enviar a mensagem, entramos na sua pasta: cd EmitLogDirect
+5- Agora pasta rodar a aplicação: dotnet run "Run. Run. Or it will explode."
+
+

@@ -3,14 +3,18 @@ using RabbitMQ.Client;
 using RabbitMQ.Client.Events;
 using System.Text;
 
-class ReceiveLogsDirect
+internal class ReceiveLogsDirect
 {
     public static void Main(string[] args)
-    {//TODO: comentar pontos criticos
+    {
         var factory = new ConnectionFactory() { HostName = "localhost" };
         using var connection = factory.CreateConnection();
         using var channel = connection.CreateModel();
+
+        //declara nosso exchange 
         channel.ExchangeDeclare(exchange: "direct_logs", type: "direct");
+
+        //cria uma queue com nome randomico e temporaria
         var queueName = channel.QueueDeclare().QueueName;
 
         if (args.Length < 1)
@@ -23,6 +27,7 @@ class ReceiveLogsDirect
             return;
         }
 
+        //para cada severidade(reoutingKey) ele ira apontar para a mesma fila
         foreach (var severity in args)
         {
             channel.QueueBind(queue: queueName,

@@ -4,7 +4,7 @@ using System.Text;
 
 namespace EmitLogFanout
 {
-    class EmitLog
+    internal class EmitLog
     {
         public static void Main(string[] args)
         {

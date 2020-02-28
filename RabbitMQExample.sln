@@ -14,18 +14,27 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TestExchangeFanout", "TestE
 		Fanout.txt = Fanout.txt
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmitLogFanout", "TestExchangeFanout\EmitLogFanout\EmitLogFanout.csproj", "{AFE9B4DD-16F3-40A3-A1D2-52693D356866}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmitLogFanout", "TestExchangeFanout\EmitLogFanout\EmitLogFanout.csproj", "{AFE9B4DD-16F3-40A3-A1D2-52693D356866}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReceiveLogsFanout", "TestExchangeFanout\ReceiveLogsFanout\ReceiveLogsFanout.csproj", "{70F875CC-F16D-425E-82D1-C5FF2A7B446D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReceiveLogsFanout", "TestExchangeFanout\ReceiveLogsFanout\ReceiveLogsFanout.csproj", "{70F875CC-F16D-425E-82D1-C5FF2A7B446D}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TestExchandeDirect", "TestExchandeDirect", "{8829B19A-69EC-4B50-9B2C-CBA3EAC7417A}"
 	ProjectSection(SolutionItems) = preProject
 		Direct.txt = Direct.txt
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmitLogDirect", "TestExchangeDirect\EmitLogDirect\EmitLogDirect.csproj", "{3F072310-30D2-4DA7-941D-055E422A1789}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmitLogDirect", "TestExchangeDirect\EmitLogDirect\EmitLogDirect.csproj", "{3F072310-30D2-4DA7-941D-055E422A1789}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReceiveLogsDirect", "TestExchangeDirect\ReceiveLogsDirect\ReceiveLogsDirect.csproj", "{61713DC4-2260-4A77-AABF-09ACDABBE1E1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReceiveLogsDirect", "TestExchangeDirect\ReceiveLogsDirect\ReceiveLogsDirect.csproj", "{61713DC4-2260-4A77-AABF-09ACDABBE1E1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TestExchangeTopic", "TestExchangeTopic", "{403C7141-B341-49CE-B0F5-15AD6C1FE1B1}"
+	ProjectSection(SolutionItems) = preProject
+		Topic.txt = Topic.txt
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmitLogTopic", "TestExchangeTopic\EmitLogTopic\EmitLogTopic.csproj", "{A7148B9E-C009-48AD-A053-E5A483630509}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReceiveLogsTopic", "TestExchangeTopic\ReceiveLogsTopic\ReceiveLogsTopic.csproj", "{42E4204B-49F7-48CE-9755-FBAA3925FBFF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +66,14 @@ Global
 		{61713DC4-2260-4A77-AABF-09ACDABBE1E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{61713DC4-2260-4A77-AABF-09ACDABBE1E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{61713DC4-2260-4A77-AABF-09ACDABBE1E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A7148B9E-C009-48AD-A053-E5A483630509}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7148B9E-C009-48AD-A053-E5A483630509}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7148B9E-C009-48AD-A053-E5A483630509}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7148B9E-C009-48AD-A053-E5A483630509}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42E4204B-49F7-48CE-9755-FBAA3925FBFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42E4204B-49F7-48CE-9755-FBAA3925FBFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42E4204B-49F7-48CE-9755-FBAA3925FBFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42E4204B-49F7-48CE-9755-FBAA3925FBFF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -68,6 +85,8 @@ Global
 		{70F875CC-F16D-425E-82D1-C5FF2A7B446D} = {5C29E5CA-FAC4-4EED-8B63-004AFDA1A2F3}
 		{3F072310-30D2-4DA7-941D-055E422A1789} = {8829B19A-69EC-4B50-9B2C-CBA3EAC7417A}
 		{61713DC4-2260-4A77-AABF-09ACDABBE1E1} = {8829B19A-69EC-4B50-9B2C-CBA3EAC7417A}
+		{A7148B9E-C009-48AD-A053-E5A483630509} = {403C7141-B341-49CE-B0F5-15AD6C1FE1B1}
+		{42E4204B-49F7-48CE-9755-FBAA3925FBFF} = {403C7141-B341-49CE-B0F5-15AD6C1FE1B1}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {BE62294F-0107-4506-9E04-44A2A0AC24B6}

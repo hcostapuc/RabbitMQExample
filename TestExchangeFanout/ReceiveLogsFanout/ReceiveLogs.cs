@@ -5,7 +5,7 @@ using System.Text;
 
 namespace ReceiveLogsFanout
 {
-    class ReceiveLogs
+    internal class ReceiveLogs
     {
         public static void Main()
         {
