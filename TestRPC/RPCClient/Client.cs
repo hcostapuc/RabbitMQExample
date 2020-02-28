@@ -15,6 +15,7 @@ public class RPCClient
 
     public RPCClient()
     {
+        //TODO: rever no codigo fonte do tutorial os arquivos de client e server, pois eles estão atualizados no link de suas respectivas sources
         var factory = new ConnectionFactory() { HostName = "localhost" };
 
         connection = factory.CreateConnection();
