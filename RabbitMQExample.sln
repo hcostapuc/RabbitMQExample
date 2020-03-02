@@ -45,6 +45,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RPCServer", "TestRPC\RPCSer
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RPCClient", "TestRPC\RPCClient\RPCClient.csproj", "{740AD759-11C4-4F27-91F6-046C5C72E492}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestPublisherConfirms", "TestPublisherConfirms\TestPublisherConfirms\TestPublisherConfirms.csproj", "{49353D27-3A97-494E-9E28-CB17727005BF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "6 - TestPublisherConfirms", "6 - TestPublisherConfirms", "{E9749604-6EF9-4E91-A173-3C56B92ABAFA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -91,6 +95,10 @@ Global
 		{740AD759-11C4-4F27-91F6-046C5C72E492}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{740AD759-11C4-4F27-91F6-046C5C72E492}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{740AD759-11C4-4F27-91F6-046C5C72E492}.Release|Any CPU.Build.0 = Release|Any CPU
+		{49353D27-3A97-494E-9E28-CB17727005BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49353D27-3A97-494E-9E28-CB17727005BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49353D27-3A97-494E-9E28-CB17727005BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49353D27-3A97-494E-9E28-CB17727005BF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -106,6 +114,7 @@ Global
 		{42E4204B-49F7-48CE-9755-FBAA3925FBFF} = {403C7141-B341-49CE-B0F5-15AD6C1FE1B1}
 		{62C64689-F1A0-44C9-9756-A247E4799C74} = {EF915724-F8B0-4B1E-AEB2-119451C751A2}
 		{740AD759-11C4-4F27-91F6-046C5C72E492} = {EF915724-F8B0-4B1E-AEB2-119451C751A2}
+		{49353D27-3A97-494E-9E28-CB17727005BF} = {E9749604-6EF9-4E91-A173-3C56B92ABAFA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {BE62294F-0107-4506-9E04-44A2A0AC24B6}
