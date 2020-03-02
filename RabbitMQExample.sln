@@ -7,9 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Publisher", "TestSimple\Pub
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Consumer", "TestSimple\Consumer\Consumer.csproj", "{A2D53527-9FB4-4B89-A21E-869B8B15CDE3}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TestSimple", "TestSimple", "{5EAEF6FC-4A7E-4E77-9DA6-F6BF4FFFDA61}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - TestSimple", "1 - TestSimple", "{5EAEF6FC-4A7E-4E77-9DA6-F6BF4FFFDA61}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TestExchangeFanout", "TestExchangeFanout", "{5C29E5CA-FAC4-4EED-8B63-004AFDA1A2F3}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - TestExchangeFanout", "2 - TestExchangeFanout", "{5C29E5CA-FAC4-4EED-8B63-004AFDA1A2F3}"
 	ProjectSection(SolutionItems) = preProject
 		Fanout.txt = Fanout.txt
 	EndProjectSection
@@ -18,7 +18,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmitLogFanout", "TestExchan
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReceiveLogsFanout", "TestExchangeFanout\ReceiveLogsFanout\ReceiveLogsFanout.csproj", "{70F875CC-F16D-425E-82D1-C5FF2A7B446D}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TestExchandeDirect", "TestExchandeDirect", "{8829B19A-69EC-4B50-9B2C-CBA3EAC7417A}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - TestExchandeDirect", "3 - TestExchandeDirect", "{8829B19A-69EC-4B50-9B2C-CBA3EAC7417A}"
 	ProjectSection(SolutionItems) = preProject
 		Direct.txt = Direct.txt
 	EndProjectSection
@@ -27,23 +27,23 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmitLogDirect", "TestExchan
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReceiveLogsDirect", "TestExchangeDirect\ReceiveLogsDirect\ReceiveLogsDirect.csproj", "{61713DC4-2260-4A77-AABF-09ACDABBE1E1}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TestExchangeTopic", "TestExchangeTopic", "{403C7141-B341-49CE-B0F5-15AD6C1FE1B1}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - TestExchangeTopic", "4 - TestExchangeTopic", "{403C7141-B341-49CE-B0F5-15AD6C1FE1B1}"
 	ProjectSection(SolutionItems) = preProject
 		Topic.txt = Topic.txt
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmitLogTopic", "TestExchangeTopic\EmitLogTopic\EmitLogTopic.csproj", "{A7148B9E-C009-48AD-A053-E5A483630509}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmitLogTopic", "TestExchangeTopic\EmitLogTopic\EmitLogTopic.csproj", "{A7148B9E-C009-48AD-A053-E5A483630509}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReceiveLogsTopic", "TestExchangeTopic\ReceiveLogsTopic\ReceiveLogsTopic.csproj", "{42E4204B-49F7-48CE-9755-FBAA3925FBFF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReceiveLogsTopic", "TestExchangeTopic\ReceiveLogsTopic\ReceiveLogsTopic.csproj", "{42E4204B-49F7-48CE-9755-FBAA3925FBFF}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TestRPC", "TestRPC", "{EF915724-F8B0-4B1E-AEB2-119451C751A2}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5 - TestRPC", "5 - TestRPC", "{EF915724-F8B0-4B1E-AEB2-119451C751A2}"
 	ProjectSection(SolutionItems) = preProject
 		RPC.md = RPC.md
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RPCServer", "TestRPC\RPCServer\RPCServer.csproj", "{62C64689-F1A0-44C9-9756-A247E4799C74}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RPCServer", "TestRPC\RPCServer\RPCServer.csproj", "{62C64689-F1A0-44C9-9756-A247E4799C74}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RPCClient", "TestRPC\RPCClient\RPCClient.csproj", "{740AD759-11C4-4F27-91F6-046C5C72E492}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RPCClient", "TestRPC\RPCClient\RPCClient.csproj", "{740AD759-11C4-4F27-91F6-046C5C72E492}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
