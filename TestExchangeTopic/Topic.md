@@ -1,16 +1,16 @@
-Topic segue a mesma diretriz do Direct, com um detalhe de diferença, suas routingKeys são dinâmicas, isso
+Topic segue a mesma diretriz do Direct, com um detalhe de diferenï¿½a, suas routingKeys sï¿½o dinï¿½micas, isso
 faz com que ela atenda a keys com prefixos. Para montar uma routingKey dinamica, utilizamos dois caracteres,
-o "*" para dizermos que ele substituirá uma unica palavra e o "#" para substituir uma ou mais palavras.
+o "*" para dizermos que ele substituirÃ¡ uma unica palavra e o "#" para substituir uma ou mais palavras.
 
-No nosso cenário, ainda representaremos um fluxo de log, iremos implementar as routingKeys com 2 níveis: <facility>.<severity>
+No nosso cenÃ¡rio, ainda representaremos um fluxo de log, iremos implementar as routingKeys com 2 nÃ­veis: <facility>.<severity>
 iremos criar 4 receiveis um com as seguintes routingKeys:
-	1 - "#" Ou seja ela aceitará qualquer key, de qualquer formato.
+	1 - "#" Ou seja ela aceitarÃ¡ qualquer key, de qualquer formato.
 	2 - "kern.*" Aceita as keys que tenham o nivel <facility> = kern e de qualquer severidade (lembrando que o "*" bainda apenas uma palavra).
 	3 - "*.critical" Aceita as keys que tenham o nivel <severety> = critical e de qualquer facility.
-	4 - "kern.*" "*.critical" Aqui estamos criando um multiple binding, estamos dizendo que uma única fila aceita
-		recebe mensagens das duas routingKeys, é como agrupar o exemplo 2 e 3 em uma única queue.
+	4 - "kern.*" "*.critical" Aqui estamos criando um multiple binding, estamos dizendo que uma Ãºnica fila
+		recebe mensagens das duas routingKeys, Ã© como agrupar o exemplo 2 e 3 em uma Ãºnica queue.
 
-Para montar o cenário:
+Para montar o cenÃ¡rio:
 
 1 - Entramos na pasta do ReceiveLogsTopic: cd ReceiveLogsTopic
 2 - Executamos o comando para criar o receive que aceita qualquer key, de qualquer formato,tamanho...: dotnet run "#"
