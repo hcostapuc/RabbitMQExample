@@ -10,6 +10,7 @@ REM Subindo os container's do rabbitmq
 
 docker-compose down
 docker-compose up -d
+
 timeout 15
 docker exec -ti rabbitmq2 bash -c %JOIN_RABBIT2_RABBIT1%
 docker exec -ti rabbitmq3 bash -c %JOIN_RABBIT3_RABBIT1%
